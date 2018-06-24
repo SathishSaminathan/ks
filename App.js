@@ -12,6 +12,7 @@ import {
   View
 } from 'react-native';
 import GetStarted from "./src/screens/GetStarted";
+import SigninSignup from "./src/screens/SigninSignup";
 
 const instructions = Platform.select({
   ios: 'Press Cmd+R to reload,\n' +
@@ -23,7 +24,7 @@ const instructions = Platform.select({
 export default class App extends Component {
   render() {
     return (
-      <GetStarted />
+      <SigninSignup />
     );
   }
 }
