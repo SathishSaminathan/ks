@@ -14,6 +14,12 @@ APP_ICON_HEIGHT=150
 
 // create a component
 class GetStarted extends Component {
+    constructor (props){
+        super(props);
+        this.state={
+            open: false
+        }
+    }
     render() {
         return (
             <View style={styles.container}>
@@ -108,6 +114,7 @@ class GetStarted extends Component {
                     style={{zIndex:1,alignSelf:"center",height:APP_ICON_HEIGHT,width:APP_ICON_HEIGHT,position:"absolute",borderRadius:APP_ICON_HEIGHT,marginTop:BACKGROUND_IMAGE_HEIGHT-(APP_ICON_HEIGHT/2)}}
                 >  
                     <TouchableOpacity
+                        onPress = {()=>this.props.getValue(true)}
                         style={{flex:1}}
                     >
                     <Image 

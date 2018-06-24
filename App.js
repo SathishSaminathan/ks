@@ -12,6 +12,7 @@ import {
   View
 } from 'react-native';
 import GetStarted from "./src/screens/GetStarted";
+import SigninSignup from "./src/screens/SigninSignup";
 
 const instructions = Platform.select({
   ios: 'Press Cmd+R to reload,\n' +
@@ -21,9 +22,22 @@ const instructions = Platform.select({
 });
 
 export default class App extends Component {
+  constructor (props) {
+    super(props);
+    this.state={
+      open : false
+    }
+  }
+  setValue = (value)=>{
+    this.setState({
+      open : value
+    })
+  }
   render() {
     return (
-      <GetStarted />
+      <View>
+     {!this.state.open ? <GetStarted getValue = {this.setValue}/>:
+     <SigninSignup/>}</View>
     );
   }
 }
