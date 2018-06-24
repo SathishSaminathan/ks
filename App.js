@@ -22,9 +22,22 @@ const instructions = Platform.select({
 });
 
 export default class App extends Component {
+  constructor (props) {
+    super(props);
+    this.state={
+      open : false
+    }
+  }
+  setValue = (value)=>{
+    this.setState({
+      open : value
+    })
+  }
   render() {
     return (
-      <SigninSignup />
+      <View>
+     {!this.state.open ? <GetStarted getValue = {this.setValue}/>:
+     <SigninSignup/>}</View>
     );
   }
 }

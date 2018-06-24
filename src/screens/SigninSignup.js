@@ -41,10 +41,6 @@ class SigninSignup extends Component {
                    value = {this.state.switch1Value}
                 />
                 </View>
-               <TextInput
-                   style={{height: 40, borderColor: 'gray', borderWidth: 1}}
-        // value={this.state.text}
-                />
                </View>
             </View>
         );
@@ -57,7 +53,8 @@ const styles = StyleSheet.create({
         flex: 1,
     },
     switchWrapper: {
-        margin: 0
+        marginTop: 100,
+        marginLeft: "45%"
     }
 });
 
