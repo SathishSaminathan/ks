@@ -33,7 +33,7 @@ class GetStarted extends Component {
                 <Animatable.View  
                     animation="slideInDown"
                     iterationCount={1}
-                    duration={200}
+                    duration={400}
                     style={{
                         height:BACKGROUND_IMAGE_HEIGHT,
                         width:width,
@@ -88,7 +88,7 @@ class GetStarted extends Component {
                                 style={{
                                     color:colorFonts.PRIMARY_YELLOW_COLOR,
                                     fontSize:colorFonts.LARGE,
-                                    fontFamily:"Roboto-Light"
+                                    // fontFamily:"Roboto-Light"
                                 }}
                             >
                                 Get
@@ -97,7 +97,7 @@ class GetStarted extends Component {
                                 style={{
                                     color:colorFonts.PRIMARY_YELLOW_COLOR,
                                     fontSize:colorFonts.LARGE,
-                                    fontFamily:"Roboto-Light"
+                                    // fontFamily:"Roboto-Light"
                                 }}
                             >
                                 Started
