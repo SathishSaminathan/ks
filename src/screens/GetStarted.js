@@ -29,8 +29,8 @@ class GetStarted extends Component {
                     backgroundColor={colorFonts.PRIMARY_YELLOW_COLOR}
                     translucent={false}
                 />
-                {/* TOP */}
-                <Animatable.View  
+                 {/* TOP */}
+                 <Animatable.View  
                     animation="slideInDown"
                     iterationCount={1}
                     duration={400}
@@ -66,7 +66,8 @@ class GetStarted extends Component {
                     animation="slideInUp"
                     iterationCount={1}
                     duration={200}
-                    style={{flex:1}}
+                    style={{
+                        height:BACKGROUND_IMAGE_HEIGHT-(BACKGROUND_IMAGE_HEIGHT/1.2)                    }}
                 >
                     <View
                         style={{
@@ -104,7 +105,7 @@ class GetStarted extends Component {
                             </Text>
                         </View>
                     </View>
-                </Animatable.View >         
+                </Animatable.View >      
                 {/* Bottom */}
                 
                 <Animatable.View  
@@ -122,8 +123,8 @@ class GetStarted extends Component {
                         style={{flex:1,height:undefined,width:undefined}}
                     />  
                     </TouchableOpacity>
-                </Animatable.View>  
-            </View>
+                </Animatable.View>                      
+                </View>
         );
     }
 }
@@ -131,7 +132,7 @@ class GetStarted extends Component {
 // define your styles
 const styles = StyleSheet.create({
     container: {
-        flex: 1,
+        flex: 1
     },
 });
 
