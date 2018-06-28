@@ -1,6 +1,6 @@
 //import liraries
 import React, { Component } from 'react';
-import { View, Text, StyleSheet,Dimensions,Image, TextInput, Switch } from 'react-native';
+import { View, Text,ImageBackground, StyleSheet,Dimensions,Image, TextInput, Switch } from 'react-native';
 import images from "../assets/img/images";
 
 
@@ -22,27 +22,18 @@ class SigninSignup extends Component {
     render() {
         return (
             <View style={styles.container}>
-                <View
-                        style={{flex: 1}}                   
-                >
-                    <Image 
-                        source={images.appBackground}
-                        style={{
-                            opacity: 0.4
-                        }} 
-                    />
+                <ImageBackground  source={images.appBackground}
+                    style={{ opacity: 0.4, height: height, width: width}} 
+                    > </ImageBackground>
+                       <View  style={styles.wrapperClass} >
+                        <Text style={styles.text}> sign up </Text> 
+                        <Switch 
+                        onValueChange = {this.toggleSwitch}
+                            value = {this.state.switch1Value}  
+                        /> 
+                        <Text style={styles.text}>sign in </Text>   
+                    </View>
                 </View>
-               <View>
-                   <View
-                        style={styles.switchWrapper}
-                    >
-               <Switch
-                   onValueChange = {this.toggleSwitch}
-                   value = {this.state.switch1Value}
-                />
-                </View>
-               </View>
-            </View>
         );
     }
 }
@@ -52,9 +43,18 @@ const styles = StyleSheet.create({
     container: {
         flex: 1,
     },
-    switchWrapper: {
+    wrapperClass: {
+        flex: 1,
+        opacity: 1,
         marginTop: 100,
-        marginLeft: "45%"
+        marginLeft: "30%",
+        flexDirection: "row",
+        position: "absolute"
+
+    },
+    text: {
+        color: "black",
+        height: 36
     }
 });
 

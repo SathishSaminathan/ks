@@ -7,6 +7,7 @@ export default {
     COLOR_PRIMARY_PINK_BACKGROUND : "#b11339c2",
     PRIMARY_YELLOW_COLOR:"#ffff11",
     PINK_TRANSPARENT: "#ea87b96b",
+    PICK_LOCATION_BACKGROUND: "#f3f3ee",
     BUTTON_PINK:"#ff1e8ff5",
     SUCCESS_COLOR :"#5cb85c",
     DANGER_COLOR : "#d9534f",
@@ -18,6 +19,6 @@ export default {
     XXLARGE : 60,
     XLARGE : 40,
     LARGE : 30,
-    MEDIUM : 24,
+    MEDIUM : 20,
     SMALL : 15,
 }
